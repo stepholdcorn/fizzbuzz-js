@@ -24,6 +24,16 @@ describe('Fizzbuzz', function() {
 			expect(fizzbuzz.isDivisibleByFive(7)).toBe(false);
 		});
 
+		it('is divisible by 3 and 5', function() {
+			fizzbuzz = new Fizzbuzz();
+			expect(fizzbuzz.isDivisibleByThreeAndFive(15)).toBe(true);
+		});
+
+		it('is NOT divisible by 3 and 5', function() {
+			fizzbuzz = new Fizzbuzz();
+			expect(fizzbuzz.isDivisibleByThreeAndFive(12)).toBe(false);
+		});
+
 	});
 
 });
